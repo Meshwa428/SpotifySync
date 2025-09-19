@@ -46,8 +46,8 @@ pip install spotipy requests beautifulsoup4
 1. Clone or copy this script to your machine:
 
    ```bash
-   wget https://example.com/sync_spotify_complete.py
-   chmod +x sync_spotify_complete.py
+   wget https://example.com/sync_spotify.py
+   chmod +x sync_spotify.py
    ```
 
 2. Create a `playlists.txt` file with one playlist URL or ID per line:
@@ -71,7 +71,7 @@ pip install spotipy requests beautifulsoup4
 Basic sync:
 
 ```bash
-python sync_spotify_complete.py
+python sync_spotify.py
 ```
 
 ### Options
@@ -92,31 +92,31 @@ python sync_spotify_complete.py
 ### Sync all playlists into `~/Music/Spotify`
 
 ```bash
-python sync_spotify_complete.py
+python sync_spotify.py
 ```
 
 ### Sync into a custom directory
 
 ```bash
-python sync_spotify_complete.py --base-dir /mnt/music/spotify
+python sync_spotify.py --base-dir /mnt/music/spotify
 ```
 
 ### Use a custom spotDL config
 
 ```bash
-python sync_spotify_complete.py --config ~/.spotdl/my_config.json
+python sync_spotify.py --config ~/.spotdl/my_config.json
 ```
 
 ### Dry-run (test mode, no downloads)
 
 ```bash
-python sync_spotify_complete.py --dry-run
+python sync_spotify.py --dry-run
 ```
 
 ### Disable metadata stripping
 
 ```bash
-python sync_spotify_complete.py --no-strip
+python sync_spotify.py --no-strip
 ```
 
 ---
