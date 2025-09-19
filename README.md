@@ -136,14 +136,9 @@ Use `--no-strip` to disable this step.
 
 ## ⚡ Troubleshooting
 
-* **`DownloaderError: Save file has to end with .spotdl`**
-  → This script already fixes it by appending `.spotdl` automatically.
-
-* **Playlists saving in wrong directory**
-  → The script `cd`s into the correct playlist folder before running `spotdl`.
-
 * **Playlist names not resolved**
-  → Install `spotipy` and set `SPOTIPY_CLIENT_ID` / `SPOTIPY_CLIENT_SECRET` env vars, or install `requests + beautifulsoup4` for scraping.
+  → Install `spotipy` and set `SPOTIPY_CLIENT_ID` / `SPOTIPY_CLIENT_SECRET` env vars, or set them in spotdl's `config.json` file.
+  → The config file is located at `C:\Users\your_username\.spotdl\config.json` or `~/.spotdl/config.json` under linux
 
 ---
 
